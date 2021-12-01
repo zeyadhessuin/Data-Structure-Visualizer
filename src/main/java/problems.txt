@@ -1,0 +1,8 @@
+/Users/ziad/Others/Projects/Data-Structure-Visualizer/src/main/java/module-info.java
+requires jfxrt;
+requires rt;
+
+// ----------->
+Node
+listSearch
+static with E

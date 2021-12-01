@@ -1,19 +1,19 @@
 package com.example.datastructurevisualizer;
 
-public class Node {
-    private int data;
+public class Node<E> {
+    private E data;
     private Node link;
-    public Node(int initialData,Node initialLink){
+    public Node(E initialData,Node initialLink){
         data = initialData;
         link = initialLink;
     }
-    public void addNodeAfter(int element){
+    public void addNodeAfter(E element){
         link = new Node(element, link);
     }
 
-    public int getData() {return data;}
+    public E getData() {return data;}
 
-    public void setData(int newData){data = newData;}
+    public void setData(E newData){data = newData;}
 
     public Node getLink(){return link;}
 
@@ -90,13 +90,13 @@ public class Node {
         return cursor;
     }
 
-    public static Node listSearch(Node head, int target){
+    /*public static Node listSearch(Node head, int target){
         for(Node cursor = head; cursor != null; cursor = cursor.link){
             if (cursor.data == target)
                 return cursor;
         }
         return null;
-    }
+    }*/
 
     public void removeNodeAfter(){
         link = link.link;

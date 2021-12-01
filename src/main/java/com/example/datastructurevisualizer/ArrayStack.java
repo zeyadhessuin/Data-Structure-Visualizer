@@ -13,7 +13,7 @@ public class ArrayStack<E> implements Cloneable{
     public ArrayStack(int initialCapacity){
         if (initialCapacity < 0)
             throw new IllegalArgumentException("initialCapacity is too small " + initialCapacity);
-        data = new Object[initialCapacity];
+        data = new Object   [initialCapacity];
         manyItems = 0;
     }
     public boolean isEmpty(){

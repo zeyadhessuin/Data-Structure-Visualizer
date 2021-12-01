@@ -9,8 +9,8 @@ module com.example.datastructurevisualizer {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-    requires jfxrt;
-    requires rt;
+    //requires jfxrt;
+    //requires rt;
 
     opens com.example.datastructurevisualizer to javafx.fxml;
     exports com.example.datastructurevisualizer;
